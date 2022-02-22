@@ -1,0 +1,114 @@
+/* manrope-regular - latin */
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('./fonts/manrope-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./fonts/manrope-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* manrope-800 - latin */
+  @font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+         url('./fonts/manrope-v11-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./fonts/manrope-v11-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  :root{
+      font-family: 'Manrope',sans-serif;
+}
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p
+{
+  margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li:first-child{
+    margin-right: 1rem;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: #72C7C2;
+  background-image: url(./imgs/hero.png);
+  background-repeat: no-repeat;
+  background-position: top 1rem right;
+  background-size: 60%;
+  margin-top: 1rem;
+}
+
+.hflex{
+    display: flex;
+}
+
+.vflex{
+    display: flex;
+    flex-direction: column;
+}
+
+div#content{
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.hero{
+    min-height:90vh;
+    width: 65ch;
+    justify-content: center;
+}
+
+.hero h2{
+    font-size: 4rem;
+    line-height: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.hero p{
+    font-size: 2rem;
+    width: 30ch;
+    line-height: 130%;
+    margin-bottom: 1.4rem;
+    opacity: 0.8;
+}
+
+button{
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 1rem;
+    width: 50%;
+    border-radius: 40rem;
+    border: none;
+    background-color: #FFD5A3 ;
+}
