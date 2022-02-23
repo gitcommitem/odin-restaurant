@@ -17,6 +17,7 @@ const createNavBar = (contDivEl) => {
 
     const createLiEl = (ulEl,string) => {
         const liEl = document.createElement("li");
+        liEl.id = string;
         ulEl.appendChild(liEl);
     
         const liTxt = document.createTextNode(string);
@@ -24,8 +25,8 @@ const createNavBar = (contDivEl) => {
         ulEl.appendChild(liEl);
     };
 
-    createLiEl(ulEl,"About");
-    createLiEl(ulEl,"Menu");
+    createLiEl(ulEl,"about");
+    createLiEl(ulEl,"menu");
 };
 
 export {createNavBar};

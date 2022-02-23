@@ -63,6 +63,10 @@ body {
   margin-top: 1rem;
 }
 
+.hidden{
+    visibility: hidden;
+}
+
 .hflex{
     display: flex;
 }
@@ -112,3 +116,36 @@ button{
     border: none;
     background-color: #FFD5A3 ;
 }
+
+li{
+    cursor: pointer;
+}
+
+section.about{
+    position: relative;
+    margin-top: -2rem;
+    z-index: -1;
+}
+
+.about h1{
+    font-size: 15rem;
+    line-height: 90%;
+    margin-bottom: 2rem;
+}
+
+.about p{
+    font-size: 2rem;
+    width: 45ch;
+    line-height: 130%;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.about p:nth-last-child(2){
+    margin-bottom: 2rem;
+}
+
+.about p#hours{
+    font-weight: 800;
+}
+
