@@ -20,10 +20,13 @@ aboutLiEl.addEventListener("click", () => {
     createAboutPage(contDivEl);
 });
 
+import { createMenuPage } from "./menu";
+
 const menuLiEl = document.querySelector("li#menu");
 menuLiEl.addEventListener("click",()=>{
     console.log("menu")
     removeSection();
+    createMenuPage(contDivEl);
 });
 
 import { createHeroSection } from "./heroSectionEl";
@@ -33,4 +36,5 @@ createHeroSection(contDivEl);
 const buttonEl = document.querySelector("button");
 buttonEl.addEventListener("click",()=>{
     removeSection();
+    createMenuPage(contDivEl);
 });

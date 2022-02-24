@@ -149,3 +149,42 @@ section.about{
     font-weight: 800;
 }
 
+section.menu{
+    margin-top: 2rem;
+}
+
+div.flavours{
+    border: 5px solid white;
+    border-radius: 10rem;
+    padding: 2rem;
+    min-height: 50vh;
+    margin-bottom: 3rem;
+}
+
+div.flavours>h2{
+    color:white;
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
+    top: -3.4rem;
+    white-space: nowrap;
+}
+
+section.menu div.vflex{
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+h3{
+    background-color: #FFD5A3;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 50%;
+}
+
+section.menu img{
+    width: 60%;
+}
+
