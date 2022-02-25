@@ -11,36 +11,33 @@ import { createNavBar } from "./navbarEl";
 
 createNavBar(contDivEl);
 
+import { createMenuPage } from "./menu";
 import { createHeroSection } from "./heroSectionEl";
+import { createButtonListener } from "./menuButton";
 
 createHeroSection(contDivEl);
+createButtonListener(removeSection,createMenuPage,contDivEl);
 
 const navLogoEl = document.querySelector("nav h1");
 navLogoEl.addEventListener("click",()=>{
     removeSection();
     createHeroSection(contDivEl);
+    createButtonListener(removeSection,createMenuPage,contDivEl);
 });
 
 import { createAboutPage } from "./about";
 
 const aboutLiEl = document.querySelector("li#about");
 aboutLiEl.addEventListener("click", () => {
-    console.log("about")
     removeSection();
     createAboutPage(contDivEl);
 });
 
-import { createMenuPage } from "./menu";
+
 
 const menuLiEl = document.querySelector("li#menu");
 menuLiEl.addEventListener("click",()=>{
-    console.log("menu")
     removeSection();
     createMenuPage(contDivEl);
 });
 
-const buttonEl = document.querySelector("button");
-buttonEl.addEventListener("click",()=>{
-    removeSection();
-    createMenuPage(contDivEl);
-});

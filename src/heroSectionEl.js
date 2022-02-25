@@ -1,5 +1,3 @@
-import heroImg from "./imgs/hero.png";
-
 const createHeroSection = (contDivEl) => {
     
     document.body.classList.remove("no-bg");
