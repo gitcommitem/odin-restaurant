@@ -18,6 +18,7 @@ import { createButtonListener } from "./menuButton";
 createHeroSection(contDivEl);
 createButtonListener(removeSection,createMenuPage,contDivEl);
 
+//Create the index page when company logo navbar item is clicked
 const navLogoEl = document.querySelector("nav h1");
 navLogoEl.addEventListener("click",()=>{
     removeSection();
@@ -25,6 +26,7 @@ navLogoEl.addEventListener("click",()=>{
     createButtonListener(removeSection,createMenuPage,contDivEl);
 });
 
+//Create the about page when About navbar item is clicked
 import { createAboutPage } from "./about";
 
 const aboutLiEl = document.querySelector("li#about");
@@ -33,8 +35,7 @@ aboutLiEl.addEventListener("click", () => {
     createAboutPage(contDivEl);
 });
 
-
-
+//Create the Menu page when Menu navbar item is clicked
 const menuLiEl = document.querySelector("li#menu");
 menuLiEl.addEventListener("click",()=>{
     removeSection();
