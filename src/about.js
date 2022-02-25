@@ -1,6 +1,6 @@
 const createAboutPage = (contDivEl) =>{
 
-    document.body.style.backgroundImage = "none";
+    document.body.classList.add("no-bg");
 
     const navbarLogoEl = document.querySelector("nav h1")
     navbarLogoEl.classList.add("hidden");

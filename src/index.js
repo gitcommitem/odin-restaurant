@@ -2,14 +2,24 @@ import "./style.css";
 
 const contDivEl = document.querySelector("div#content");
 
-import { createNavBar } from "./navbarEl";
-
-createNavBar(contDivEl);
-
 const removeSection = () => {
     const sectionEl = document.querySelector("section");
     sectionEl.remove();
 };
+
+import { createNavBar } from "./navbarEl";
+
+createNavBar(contDivEl);
+
+import { createHeroSection } from "./heroSectionEl";
+
+createHeroSection(contDivEl);
+
+const navLogoEl = document.querySelector("nav h1");
+navLogoEl.addEventListener("click",()=>{
+    removeSection();
+    createHeroSection(contDivEl);
+});
 
 import { createAboutPage } from "./about";
 
@@ -28,10 +38,6 @@ menuLiEl.addEventListener("click",()=>{
     removeSection();
     createMenuPage(contDivEl);
 });
-
-import { createHeroSection } from "./heroSectionEl";
-
-createHeroSection(contDivEl);
 
 const buttonEl = document.querySelector("button");
 buttonEl.addEventListener("click",()=>{

@@ -1,4 +1,10 @@
-import img from "./imgs/hero.png";
+import pineappleImg from "./imgs/pine.png";
+import watermelonImg from "./imgs/watermelon.png";
+import orangeImg from "./imgs/orange.png";
+
+import vanillaImg from "./imgs/vanilla.png";
+import strawberryImg from "./imgs/strawberry.png";
+import chocoImg from "./imgs/choco.png";
 
 const createMenuPage = (contDivEl) =>{
 
@@ -7,16 +13,19 @@ const createMenuPage = (contDivEl) =>{
     };
 
     //Seasonal flavours
-    const pineapple = createFlavour("Pineapple",img,"Pineapple Soft Serve");
-    const watermelon = createFlavour("Watermelon",img,"Watermelon Soft Serve");
-    const orange = createFlavour("Orange",img,"Orange Soft Serve");
+    const pineapple = createFlavour("Pineapple",pineappleImg,"Pineapple Soft Serve");
+    const watermelon = createFlavour("Watermelon",watermelonImg,"Watermelon Soft Serve");
+    const orange = createFlavour("Orange",orangeImg,"Orange Soft Serve");
 
     //Regular flavours
-    const vanilla = createFlavour("Vanilla",img,"Vanilla Soft Serve");
-    const strawberry = createFlavour("Strawberry",img,"Strawberry Soft Serve");
-    const chocolate = createFlavour("Chocolate",img,"Chocolate Soft Serve");
+    const vanilla = createFlavour("Vanilla",vanillaImg,"Vanilla Soft Serve");
+    const strawberry = createFlavour("Strawberry",strawberryImg,"Strawberry Soft Serve");
+    const chocolate = createFlavour("Chocolate",chocoImg,"Chocolate Soft Serve");
+
+    const navbarLogoEl = document.querySelector("nav h1")
+    navbarLogoEl.classList.remove("hidden");
    
-    document.body.style.backgroundImage = "none";
+    document.body.classList.add("no-bg");
 
     const sectionEl = document.createElement("section");
     sectionEl.classList.add("menu");

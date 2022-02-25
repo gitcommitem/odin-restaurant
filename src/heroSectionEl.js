@@ -1,4 +1,9 @@
+import heroImg from "./imgs/hero.png";
+
 const createHeroSection = (contDivEl) => {
+    
+    document.body.classList.remove("no-bg");
+
     const sectionEl = document.createElement("section");
     sectionEl.classList.add("hero","vflex");
 
